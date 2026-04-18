@@ -1,514 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parameshwari Gangatharan | Creative Designer & Developer</title>
-    <meta name="description"
-        content="Portfolio of Parameshwari Gangatharan - UI/UX Designer, Frontend Developer, and Graphic Designer.">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <title>Parameshwari Gangatharan | UI/UX Designer & Frontend Developer</title>
+    <meta name="description" content="Portfolio of Parameshwari Gangatharan, UI/UX Designer and Frontend Developer. High-standard design and code.">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- Custom Mouse Trailer -->
-<div id="mouse-trailer"></div>
+<body>
 
-<style>
-    #mouse-trailer {
-        height: 20px;
-        width: 20px;
-        background-color: var(--primary-color);
-        border-radius: 50%;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 10000;
-        pointer-events: none;
-        opacity: 0;
-        transition: opacity 500ms ease;
-        mix-blend-mode: difference;
-    }
+    <div id="scroll-progress"></div>
 
-    body:hover #mouse-trailer {
-        opacity: 1;
-    }
-</style>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-    <div class="container">
-        <a class="navbar-brand" href="#">PARAMESHWARI <span>G.</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <i class="fas fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="#home">/ Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">/ Works</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">/ Expertise</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">/ Story</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">/ Contact</a></li>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">PARAMESHWARI <span>G.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7 hero-content">
-                <div class="ai-prompt">
-                    <span class="text-muted small">AI Prompt:</span>
-                    <span class="small">Create a collection of stunning works</span>
-                    <div class="ai-cursor"></div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text reveal">
+                    <div class="ai-prompt">
+                        <span class="prompt-label">AI Prompt:</span>
+                        <span class="prompt-text">Create a collection of stunning works</span>
+                        <div class="prompt-cursor"></div>
+                    </div>
+                    
+                    <div class="selection-box" style="display: inline-block;">
+                        <span class="handle h-tl"></span>
+                        <span class="handle h-tr"></span>
+                        <span class="handle h-bl"></span>
+                        <span class="handle h-br"></span>
+                        
+                        <p class="script-font" style="margin-bottom: 0.5rem;">Parameshwari Gangatharan</p>
+                        <h1>UI/UX & <br><span>Graphic</span><br>Design Portfoilo</h1>
+                    </div>
+                    
+                    <p style="margin-top: 2rem;">UI/UX Designer & Frontend Developer creating user-friendly web and mobile applications with a focus on intuitive and accessible digital experiences.</p>
+                    
+                    <div class="cta-group">
+                        <a href="#works" class="btn btn-primary">Discover Works</a>
+                        <a href="#contact" class="btn btn-outline">Collaborate</a>
+                    </div>
                 </div>
-                <div class="design-frame ms-0 d-inline-block">
-                    <div class="frame-corner-tl"></div>
-                    <div class="frame-corner-tr"></div>
-                    <div class="frame-corner-bl"></div>
-                    <div class="frame-corner-br"></div>
-                    <h5 class="script-font h3 mb-2">Parameshwari Gangatharan</h5>
-                    <h1 class="display-1 fw-black">UI/UX & GRAPHIC<br><span style="color: var(--primary-color)">DESIGN
-                            PORTFOLIO</span></h1>
-                </div>
-                <p class="mt-4 text-muted lead">Senior UI/UX Designer, Frontend Developer, and Brand Architect.
-                    Navigating the intersection of human creativity and modern code to build the digital futures of
-                    tomorrow.</p>
-                <div class="d-flex gap-3 mt-5">
-                    <a href="#projects" class="btn btn-primary">Discover Works</a>
-                    <a href="#contact" class="btn btn-outline-primary">Collaborate</a>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="hero-image text-center design-frame">
-                    <div class="frame-corner-tl"></div>
-                    <div class="frame-corner-tr"></div>
-                    <div class="frame-corner-bl"></div>
-                    <div class="frame-corner-br"></div>
-                    <img src="profile.jpg" alt="Parameshwari Gangatharan" class="img-fluid grayscale-img">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Projects Section -->
-<section id="projects" class="reveal">
-    <div class="container">
-        <div class="section-title text-start mb-5">
-            <p class="script-font mb-0">Chapter 01</p>
-            <div class="design-frame d-inline-block p-0 border-0">
-                <h2 class="display-4">Curated <span style="color: var(--primary-color)">Works</span></h2>
-            </div>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-pencil-ruler"></i></div>
-                    <h4>UI/UX Strategy</h4>
-                    <p class="small text-muted mb-3">User Research, Wireframing, Prototyping, Design Systems</p>
-                    <div class="progress" style="height: 6px;">
-                        <div class="progress-bar" style="width: 90%; background-color: var(--primary-color);"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
-                    <h4>Visual Identity</h4>
-                    <p class="small text-muted mb-3">Logo Design, Brand Guidelines, Typography, Color Theory</p>
-                    <div class="progress" style="height: 6px;">
-                        <div class="progress-bar" style="width: 95%; background-color: var(--primary-color);"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-bullhorn"></i></div>
-                    <h4>Graphic Design</h4>
-                    <p class="small text-muted mb-3">Social Media Assets, Print Media, Posters, Illusrations</p>
-                    <div class="progress" style="height: 6px;">
-                        <div class="progress-bar" style="width: 92%; background-color: var(--primary-color);"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                    <h4>Frontend Architecture</h4>
-                    <p class="small text-muted mb-3">HTML5, CSS3, Modern JS, Bootstrap, Optimization</p>
-                    <div class="progress" style="height: 6px;">
-                        <div class="progress-bar" style="width: 85%; background-color: var(--primary-color);"></div>
+                <div class="hero-image-wrapper reveal">
+                    <div class="selection-box" style="padding: 15px; border-style: dotted;">
+                        <span class="handle h-tl"></span>
+                        <span class="handle h-tr"></span>
+                        <span class="handle h-bl"></span>
+                        <span class="handle h-br"></span>
+                        
+                        <div class="blob-container">
+                            <img src="profile.jpg" alt="Parameshwari Gangatharan">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Projects Section -->
-<section id="projects" class="bg-white reveal">
-    <div class="container">
-        <div class="section-title">
-            <h2>Featured Projects</h2>
+    <!-- Professional Summary -->
+    <section id="summary" style="background: var(--bg-alt); padding: 80px 0;">
+        <div class="container reveal">
+            <div style="max-width: 900px;">
+                <h3 style="color: var(--primary); margin-bottom: 2rem;">Professional Summary</h3>
+                <h2 style="font-size: 2rem; line-height: 1.5; text-transform: none;">“UI/UX Designer with 2+ years of experience in designing responsive web and mobile applications. Currently working at Enova Solutions, focused on delivering user-centered and performance-driven design solutions.”</h2>
+            </div>
         </div>
-        <div class="row g-4">
-            <!-- Project 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-                            alt="Dashboard UX">
-                    </div>
-                    <div class="p-4">
-                        <h5>Zenith Analytics Dashboard</h5>
-                        <p class="text-muted small">A comprehensive data visualization tool for enterprise businesses.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-light text-dark">UI/UX</span>
-                            <span class="badge bg-light text-dark">Figma</span>
-                        </div>
-                        <a href="project-1.html" class="btn btn-outline-primary btn-sm">View Case Study</a>
-                    </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>My <span>Expertise</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-bezier-curve"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>User Research, Wireframing, Prototyping, Usability Testing, and Visual Design.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Design Systems</h3>
+                    <p>Building scalable, reusable component libraries and consistent visual languages.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Crafting mobile-first layouts that work seamlessly across all screen sizes.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Frontend Stack</h3>
+                    <p>HTML5, CSS3, SASS, Bootstrap, and ensuring pixel-perfect implementation.</p>
                 </div>
             </div>
-            <!-- Project 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
-                            alt="E-commerce UI">
-                    </div>
-                    <div class="p-4">
-                        <h5>Nova Fashion E-commerce</h5>
-                        <p class="text-muted small">Modern mobile-first online shopping experience for luxury apparel.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-light text-dark">Frontend</span>
-                            <span class="badge bg-light text-dark">Bootstrap</span>
-                        </div>
-                        <a href="project-2.html" class="btn btn-outline-primary btn-sm">View Case Study</a>
-                    </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" style="background: var(--bg-alt);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Work <span>Experience</span></h2>
+            </div>
+            
+            <div class="exp-row reveal">
+                <div class="exp-left">
+                    <div class="exp-year">2025 – Present</div>
+                    <div class="exp-company">Enova Solutions</div>
+                </div>
+                <div class="exp-right">
+                    <span class="exp-role">UI/UX Designer</span>
+                    <p class="exp-details">Designing modern, responsive web and mobile UI using Figma, creating reusable design components, and collaborating with developers for accurate implementation.</p>
                 </div>
             </div>
-            <!-- Project 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80"
-                            alt="Branding Project">
-                    </div>
-                    <div class="p-4">
-                        <h5>Bloom Brand Identity</h5>
-                        <p class="text-muted small">Comprehensive branding and visual identity for an eco-skincare
-                            startup.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-light text-muted">Graphic Design</span>
-                            <span class="badge bg-light text-muted">Branding</span>
-                        </div>
-                        <a href="project-3.html" class="btn btn-outline-primary btn-sm">Brief Case Study</a>
-                    </div>
+
+            <div class="exp-row reveal">
+                <div class="exp-left">
+                    <div class="exp-year">2023 – 2025</div>
+                    <div class="exp-company">CreativeDotz, Coimbatore</div>
+                </div>
+                <div class="exp-right">
+                    <span class="exp-role">UI/UX Designer</span>
+                    <p class="exp-details">Designed responsive UI for web and mobile applications, built wireframes and mockups, and worked closely with team members to deliver user-friendly solutions.</p>
                 </div>
             </div>
-            <!-- Project 4 (Graphic Design Focus) -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1561070791-26c11d6d9e3d?auto=format&fit=crop&w=800&q=80"
-                            alt="Poster Design">
-                    </div>
-                    <div class="p-4">
-                        <h5>Visual Narrative Posters</h5>
-                        <p class="text-muted small">Experimental typography and poster series for a modern art
-                            exhibition.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-light text-muted">Graphic Design</span>
-                            <span class="badge bg-light text-muted">Typography</span>
-                        </div>
-                        <a href="#" class="btn btn-outline-primary btn-sm">View Work</a>
+        </div>
+    </section>
+
+    <!-- Featured Works -->
+    <section id="works">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Featured <span>Works</span></h2>
+            </div>
+            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                <div class="reveal" style="position: relative; overflow: hidden; border-radius: 12px;">
+                    <img src="medicine_app_ui_1776519730601.png" style="width: 100%; display: block;">
+                    <div style="padding: 1.5rem; background: var(--bg-alt);">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Medicine Ordering App</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Mobile App UI/UX Design</p>
                     </div>
                 </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
-                            alt="Mobile App">
-                    </div>
-                    <div class="p-4">
-                        <h5>SwiftFood Delivery App</h5>
-                        <p class="text-muted small">Personalized nutrition and healthy meal delivery application design.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-light text-dark">Mobile UX</span>
-                            <span class="badge bg-light text-dark">Research</span>
-                        </div>
-                        <a href="project-4.html" class="btn btn-outline-primary btn-sm">View Case Study</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
-                            alt="Real Estate">
-                    </div>
-                    <div class="p-4">
-                        <h5>EstateEase Platform</h5>
-                        <p class="text-muted small">Clean and efficient property search landing page with smart filters.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-light text-dark">Web Design</span>
-                            <span class="badge bg-light text-dark">Landing Page</span>
-                        </div>
-                        <a href="project-5.html" class="btn btn-outline-primary btn-sm">View Case Study</a>
+                <div class="reveal" style="position: relative; overflow: hidden; border-radius: 12px;">
+                    <img src="music_podcast_app_ui_1776519842362.png" style="width: 100%; display: block;">
+                    <div style="padding: 1.5rem; background: var(--bg-alt);">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Music & Podcast Application</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Dark Mode Mobile UI</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Design Process -->
-<section id="process" class="reveal">
-    <div class="container">
-        <div class="section-title">
-            <h2>My Design Process</h2>
-        </div>
-        <div class="row g-0">
-            <div class="col-md">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h5>Research</h5>
-                    <p class="small text-muted">Understanding user needs and market trends.</p>
-                </div>
+    <!-- Education Section -->
+    <section id="education" style="background: var(--bg-alt);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Education</h2>
             </div>
-            <div class="col-md">
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h5>Wireframe</h5>
-                    <p class="small text-muted">Sketching low-fidelity blueprints of the solution.</p>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="exp-year">Bachelor's Degree</div>
+                    <h3>B.Sc Computer Science</h3>
+                    <p>CGPA: 8.2</p>
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h5>Design</h5>
-                    <p class="small text-muted">Applying aesthetics and high-fidelity visuals.</p>
+                <div class="skill-card reveal">
+                    <div class="exp-year">HSC</div>
+                    <h3>68% Marks</h3>
+                    <p>Higher Secondary Certificate</p>
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h5>Develop</h5>
-                    <p class="small text-muted">Bringing pixels to life with clean, efficient code.</p>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <h5>Test</h5>
-                    <p class="small text-muted">Ensuring quality and usability across devices.</p>
+                <div class="skill-card reveal">
+                    <div class="exp-year">SSLC</div>
+                    <h3>83% Marks</h3>
+                    <p>Secondary School Leaving Certificate</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Experience Section -->
-<section id="experience" class="bg-light reveal">
-    <div class="container">
-        <div class="section-title">
-            <h2>Work Experience</h2>
-        </div>
-        <div class="timeline">
-            <!-- Exp 1 -->
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h5 style="color: var(--primary-color);">Senior UI/UX & Graphic Designer</h5>
-                    <h6>Creative Agency • 2023 - Present</h6>
-                    <p class="small text-muted mt-2">Overseeing end-to-end design solutions, from brand
-                        conceptualization and visual identity to high-fidelity UI/UX systems. Bridging design and
-                        frontend development for optimal product delivery.</p>
-                </div>
-            </div>
-            <!-- Exp 2 -->
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h5 style="color: var(--primary-color);">Frontend Developer</h5>
-                    <h6>Tech Solutions • 2021 - 2023</h6>
-                    <p class="small text-muted mt-2">Developed responsive websites using HTML, CSS, and JavaScript.
-                        Focused on performance optimization and cross-browser compatibility.</p>
-                </div>
-            </div>
-            <!-- Exp 3 -->
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h5 style="color: var(--primary-color);">Junior Graphic Designer</h5>
-                    <h6>Visual Studios • 2019 - 2021</h6>
-                    <p class="small text-muted mt-2">Created brand identities, social media marketing materials, and
-                        print advertisements for various local brands.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="bg-white">
-    <div class="container">
-        <div class="section-title">
-            <h2>Get In Touch</h2>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-5">
-                <div class="contact-info h-100">
-                    <h4 class="mb-4">Contact Information</h4>
-                    <div class="d-flex mb-4">
-                        <div class="me-3 fs-4 text-primary" style="color: var(--primary-color) !important;"><i
-                                class="fas fa-envelope"></i></div>
-                        <div>
-                            <h6>Email</h6>
-                            <p class="text-muted">parameshwari@example.com</p>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="reveal">
+                    <div class="section-title">
+                        <h2>Get In <span>Touch</span></h2>
+                    </div>
+                    <div style="margin-bottom: 3rem;">
+                        <p style="color: var(--text-muted); margin-bottom: 2rem;">I'm currently available for freelance projects and full-time opportunities.</p>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-phone" style="color: var(--primary);"></i>
+                                <span>+91 6380291022</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-envelope" style="color: var(--primary);"></i>
+                                <span>parameshg2003@gmail.com</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-location-dot" style="color: var(--primary);"></i>
+                                <span>Tamil Nadu, India</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex mb-4">
-                        <div class="me-3 fs-4 text-primary" style="color: var(--primary-color) !important;"><i
-                                class="fas fa-phone"></i></div>
-                        <div>
-                            <h6>Phone</h6>
-                            <p class="text-muted">+91 98765 43210</p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-4">
-                        <div class="me-3 fs-4 text-primary" style="color: var(--primary-color) !important;"><i
-                                class="fas fa-location-dot"></i></div>
-                        <div>
-                            <h6>Location</h6>
-                            <p class="text-muted">Tamil Nadu, India</p>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <h6>Follow Me</h6>
-                        <div class="d-flex gap-3 mt-3">
-                            <a href="#" class="fs-4 text-muted"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="fs-4 text-muted"><i class="fab fa-behance"></i></a>
-                            <a href="#" class="fs-4 text-muted"><i class="fab fa-dribbble"></i></a>
-                            <a href="#" class="fs-4 text-muted"><i class="fab fa-github"></i></a>
-                        </div>
+                    <div style="display: flex; gap: 1.5rem;">
+                        <a href="https://behance.net/parameshDesigns" target="_blank" style="color: #fff; font-size: 1.5rem;"><i class="fab fa-behance"></i></a>
+                        <a href="#" style="color: #fff; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #fff; font-size: 1.5rem;"><i class="fab fa-dribbble"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-7">
-                <form class="contact-info">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control" placeholder="Your Name">
+                <div class="reveal">
+                    <form>
+                        <div class="input-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="e.g. John Doe">
                         </div>
-                        <div class="col-md-6">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Your Email">
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="e.g. john@example.com">
                         </div>
-                        <div class="col-12">
-                            <label class="form-label">Subject</label>
-                            <input type="text" class="form-control" placeholder="Subject">
+                        <div class="input-group">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Tell me about your project..."></textarea>
                         </div>
-                        <div class="col-12">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-control" rows="5"
-                                placeholder="Tell me about your project..."></textarea>
-                        </div>
-                        <div class="col-12 mt-4">
-                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                        </div>
-                    </div>
-                </form>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="py-4 bg-light">
-    <div class="container text-center">
-        <p class="mb-0 text-muted">&copy; 2025 Parameshwari Gangatharan. Design Architect. All Rights Reserved.</p>
-    </div>
-</footer>
+    <footer>
+        <div class="container" style="text-align: center; padding: 40px 0; border-top: 1px solid var(--border);">
+            <p style="color: var(--text-muted); font-size: 0.8rem;">© 2026 Parameshwari Gangatharan. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-        navbar.classList.toggle('scrolled', window.scrollY > 50);
-
-        // Simple ScrollSpy
-        let sections = document.querySelectorAll('section');
-        let navlinks = document.querySelectorAll('.nav-link');
-
-        sections.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
-
-            if (top >= offset && top < offset + height) {
-                navlinks.forEach(links => {
-                    links.classList.remove('active');
-                    const targetLink = document.querySelector(`.navbar-nav a[href*="${id}"]`);
-                    if (targetLink) targetLink.classList.add('active');
-                });
-            }
-        });
-    });
-
-    // Intersection Observer for Reveal Animation
-    const observerOptions = {
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // Mouse Trailer Logic
-    const trailer = document.getElementById("mouse-trailer");
-    window.onmousemove = e => {
-        const x = e.clientX - trailer.offsetWidth / 2,
-            y = e.clientY - trailer.offsetHeight / 2;
-
-        const keyframes = {
-            transform: `translate(${x}px, ${y}px)`
-        }
-
-        trailer.animate(keyframes, {
-            duration: 800,
-            fill: "forwards"
-        });
-    }
-</script>
+    <script src="script.js"></script>
 </body>
-
 </html>
