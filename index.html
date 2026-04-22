@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parameshwari Gangatharan | UI/UX Designer & Frontend Developer</title>
-    <meta name="description" content="Portfolio of Parameshwari Gangatharan, UI/UX Designer and Frontend Developer. High-standard design and code.">
-    
+    <title>Parameshwari Gangatharan | World-Class UI/UX Portfolio</title>
+    <meta name="description"
+        content="The official portfolio of Parameshwari Gangatharan. Premium UI/UX design and Frontend development.">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div id="scroll-progress"></div>
+    <div id="progress-bar"></div>
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <div class="blob-bg"></div>
+    <div class="blob-bg-2"></div>
 
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">PARAMESHWARI <span>G.</span></a>
+            <a href="#" class="logo">PARAME<span>S.</span></a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#works">Works</a></li>
-                <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Connect</a></li>
             </ul>
         </div>
     </nav>
@@ -36,37 +43,30 @@
             <div class="hero-grid">
                 <div class="hero-text reveal">
                     <div class="ai-prompt">
-                        <span class="prompt-label">AI Prompt:</span>
-                        <span class="prompt-text">Create a collection of stunning works</span>
-                        <div class="prompt-cursor"></div>
+                        <span class="badge">AI PROMPT</span>
+                        <span class="prompt-text">Synthesize a world-class interface...</span>
                     </div>
-                    
+
                     <div class="selection-box" style="display: inline-block;">
                         <span class="handle h-tl"></span>
                         <span class="handle h-tr"></span>
                         <span class="handle h-bl"></span>
                         <span class="handle h-br"></span>
-                        
-                        <p class="script-font" style="margin-bottom: 0.5rem;">Parameshwari Gangatharan</p>
-                        <h1>UI/UX & <br><span>Graphic</span><br>Design Portfoilo</h1>
+                        <h1>UI/UX & <br><span>Digital</span><br> Experiences</h1>
                     </div>
-                    
-                    <p style="margin-top: 2rem;">UI/UX Designer & Frontend Developer creating user-friendly web and mobile applications with a focus on intuitive and accessible digital experiences.</p>
-                    
+
+                    <p class="text-gradient">I'm Parameshwari, a designer obsessed with crafting intuitive digital
+                        landscapes. Currently shaping the future at Enova Solutions.</p>
+
                     <div class="cta-group">
-                        <a href="#works" class="btn btn-primary">Discover Works</a>
-                        <a href="#contact" class="btn btn-outline">Collaborate</a>
+                        <a href="#works" class="btn btn-primary">Elite Works <i class="fas fa-arrow-right"></i></a>
+                        <a href="#resume" class="btn btn-outline">Curriculum Vitae</a>
                     </div>
                 </div>
 
                 <div class="hero-image-wrapper reveal">
-                    <div class="selection-box" style="padding: 15px; border-style: dotted;">
-                        <span class="handle h-tl"></span>
-                        <span class="handle h-tr"></span>
-                        <span class="handle h-bl"></span>
-                        <span class="handle h-br"></span>
-                        
-                        <div class="blob-container">
+                    <div class="profile-card">
+                        <div class="profile-img-container">
                             <img src="profile.jpg" alt="Parameshwari Gangatharan">
                         </div>
                     </div>
@@ -75,187 +75,183 @@
         </div>
     </section>
 
-    <!-- Professional Summary -->
-    <section id="summary" style="background: var(--bg-alt); padding: 80px 0;">
-        <div class="container reveal">
-            <div style="max-width: 900px;">
-                <h3 style="color: var(--primary); margin-bottom: 2rem;">Professional Summary</h3>
-                <h2 style="font-size: 2rem; line-height: 1.5; text-transform: none;">“UI/UX Designer with 2+ years of experience in designing responsive web and mobile applications. Currently working at Enova Solutions, focused on delivering user-centered and performance-driven design solutions.”</h2>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise -->
-    <section id="expertise">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>My <span>Expertise</span></h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card reveal">
-                    <div class="skill-icon"><i class="fas fa-bezier-curve"></i></div>
-                    <h3>UI/UX Design</h3>
-                    <p>User Research, Wireframing, Prototyping, Usability Testing, and Visual Design.</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
-                    <h3>Design Systems</h3>
-                    <p>Building scalable, reusable component libraries and consistent visual languages.</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>Responsive Design</h3>
-                    <p>Crafting mobile-first layouts that work seamlessly across all screen sizes.</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>Frontend Stack</h3>
-                    <p>HTML5, CSS3, SASS, Bootstrap, and ensuring pixel-perfect implementation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Experience -->
-    <section id="experience" style="background: var(--bg-alt);">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Work <span>Experience</span></h2>
-            </div>
-            
-            <div class="exp-row reveal">
-                <div class="exp-left">
-                    <div class="exp-year">2025 – Present</div>
-                    <div class="exp-company">Enova Solutions</div>
-                </div>
-                <div class="exp-right">
-                    <span class="exp-role">UI/UX Designer</span>
-                    <p class="exp-details">Designing modern, responsive web and mobile UI using Figma, creating reusable design components, and collaborating with developers for accurate implementation.</p>
-                </div>
-            </div>
-
-            <div class="exp-row reveal">
-                <div class="exp-left">
-                    <div class="exp-year">2023 – 2025</div>
-                    <div class="exp-company">CreativeDotz, Coimbatore</div>
-                </div>
-                <div class="exp-right">
-                    <span class="exp-role">UI/UX Designer</span>
-                    <p class="exp-details">Designed responsive UI for web and mobile applications, built wireframes and mockups, and worked closely with team members to deliver user-friendly solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Works -->
+    <!-- Works Section -->
     <section id="works">
         <div class="container">
-            <div class="section-title reveal">
-                <h2>Featured <span>Works</span></h2>
+            <div class="section-header reveal">
+                <div>
+                    <span class="script-font">Selected Projects</span>
+                    <h2>Curation of Excellence</h2>
+                </div>
+                <div style="text-align: right;">
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">View all 24+ works on Behance</p>
+                </div>
             </div>
-            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
-                <div class="reveal" style="position: relative; overflow: hidden; border-radius: 12px;">
-                    <img src="medicine_app_ui_1776519730601.png" style="width: 100%; display: block;">
-                    <div style="padding: 1.5rem; background: var(--bg-alt);">
-                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Medicine Ordering App</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Mobile App UI/UX Design</p>
+
+            <div class="works-grid">
+                <!-- Project 1 -->
+                <div class="work-card reveal">
+                    <div class="work-img">
+                        <img src="medicine_app_ui_1776519730601.png" alt="Medicine App">
+                    </div>
+                    <div class="work-content">
+                        <span class="work-tag">Mobile UI/UX</span>
+                        <h3 class="work-title">PharmaFlow Platform</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Revolutionizing medicine delivery
+                            through
+                            dynamic interface patterns and user-centric flows.</p>
+
+                        <div class="work-footer">
+                            <div class="reaction-group">
+                                <div class="reaction-btn like-btn" data-count="1.2k">
+                                    <i class="far fa-heart"></i> <span>1.2k</span>
+                                </div>
+                                <div class="reaction-btn" data-count="45">
+                                    <i class="far fa-comment"></i> <span>45</span>
+                                </div>
+                            </div>
+                            <a href="#" class="reaction-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="reveal" style="position: relative; overflow: hidden; border-radius: 12px;">
-                    <img src="music_podcast_app_ui_1776519842362.png" style="width: 100%; display: block;">
-                    <div style="padding: 1.5rem; background: var(--bg-alt);">
-                        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Music & Podcast Application</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Dark Mode Mobile UI</p>
+
+                <!-- Project 2 -->
+                <div class="work-card reveal">
+                    <div class="work-img">
+                        <img src="music_podcast_app_ui_1776519842362.png" alt="Music App">
+                    </div>
+                    <div class="work-content">
+                        <span class="work-tag">Visual Design</span>
+                        <h3 class="work-title">Sonic Pulse Experience</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">A high-fidelity dark mode music
+                            ecosystem
+                            designed for seamless auditory consumption.</p>
+
+                        <div class="work-footer">
+                            <div class="reaction-group">
+                                <div class="reaction-btn like-btn" data-count="892">
+                                    <i class="far fa-heart"></i> <span>892</span>
+                                </div>
+                                <div class="reaction-btn" data-count="28">
+                                    <i class="far fa-comment"></i> <span>28</span>
+                                </div>
+                            </div>
+                            <a href="#" class="reaction-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" style="background: var(--bg-alt);">
+    <!-- Experience Section -->
+    <section id="experience" style="background: var(--bg-alt);">
         <div class="container">
-            <div class="section-title reveal">
-                <h2>Education</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card reveal">
-                    <div class="exp-year">Bachelor's Degree</div>
-                    <h3>B.Sc Computer Science</h3>
-                    <p>CGPA: 8.2</p>
+            <span class="script-font">My Career Journey</span>
+            <h2 style="margin-bottom: 3rem;">Global Impact</h2>
+
+            <div class="exp-list">
+                <div class="exp-item reveal">
+                    <div class="exp-date">2025 — PRESENT</div>
+                    <div class="exp-info">
+                        <h3>UI/UX Designer @ Enova Solutions</h3>
+                        <p>Leading the digital transformation of enterprise-level applications with a focus on design
+                            systems and performance-driven UI.</p>
+                    </div>
                 </div>
-                <div class="skill-card reveal">
-                    <div class="exp-year">HSC</div>
-                    <h3>68% Marks</h3>
-                    <p>Higher Secondary Certificate</p>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="exp-year">SSLC</div>
-                    <h3>83% Marks</h3>
-                    <p>Secondary School Leaving Certificate</p>
+
+                <div class="exp-item reveal">
+                    <div class="exp-date">2023 — 2025</div>
+                    <div class="exp-info">
+                        <h3>Design Associate @ CreativeDotz</h3>
+                        <p>Crafted over 15+ successful web and mobile products. Specialized in rapid prototyping and
+                            user research methodologies.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="script-font">Ready to Scale?</span>
+                <h2>Detailed Dossier</h2>
+                <p style="color: var(--text-muted); margin-top: 1rem;">Download my professional background for your
+                    internal review.</p>
+            </div>
+
+            <div class="resume-paper reveal">
+                <div
+                    style="display: flex; justify-content: space-between; border-bottom: 2px solid #000; padding-bottom: 2rem;">
+                    <div>
+                        <h1 style="color: #000; font-size: 3rem;">PARAMESHWARI G.</h1>
+                        <p style="color: #666; font-weight: 700;">UI/UX DESIGNER | FRONTEND ARCHITECT</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p>parameshg2003@gmail.com</p>
+                        <p>+91 6380291022</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem;">
+                    <div>
+                        <h4 style="color: #000; margin-bottom: 1rem;">SKILLSET</h4>
+                        <ul style="list-style: none; font-size: 0.8rem; line-height: 2;">
+                            <li>Figma Architecture</li>
+                            <li>Design Systems</li>
+                            <li>User Flow Analysis</li>
+                            <li>Frontend Engineering</li>
+                            <li>SASS/SCSS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #000; margin-bottom: 1rem;">MISSION</h4>
+                        <p style="font-size: 0.9rem;">To bridge the gap between human intuition and digital interaction.
+                            I build interfaces that don't just look good, but feel right.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 4rem; text-align: center;">
+                    <a href="#" class="btn btn-primary" style="border-radius: 50px;">Digital Download (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
     <section id="contact">
-        <div class="container">
-            <div class="hero-grid">
-                <div class="reveal">
-                    <div class="section-title">
-                        <h2>Get In <span>Touch</span></h2>
-                    </div>
-                    <div style="margin-bottom: 3rem;">
-                        <p style="color: var(--text-muted); margin-bottom: 2rem;">I'm currently available for freelance projects and full-time opportunities.</p>
-                        <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <div style="display: flex; align-items: center; gap: 1rem;">
-                                <i class="fas fa-phone" style="color: var(--primary);"></i>
-                                <span>+91 6380291022</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 1rem;">
-                                <i class="fas fa-envelope" style="color: var(--primary);"></i>
-                                <span>parameshg2003@gmail.com</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 1rem;">
-                                <i class="fas fa-location-dot" style="color: var(--primary);"></i>
-                                <span>Tamil Nadu, India</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="display: flex; gap: 1.5rem;">
-                        <a href="https://behance.net/parameshDesigns" target="_blank" style="color: #fff; font-size: 1.5rem;"><i class="fab fa-behance"></i></a>
-                        <a href="#" style="color: #fff; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" style="color: #fff; font-size: 1.5rem;"><i class="fab fa-dribbble"></i></a>
-                    </div>
-                </div>
-                <div class="reveal">
-                    <form>
-                        <div class="input-group">
-                            <label>Your Name</label>
-                            <input type="text" placeholder="e.g. John Doe">
-                        </div>
-                        <div class="input-group">
-                            <label>Email Address</label>
-                            <input type="email" placeholder="e.g. john@example.com">
-                        </div>
-                        <div class="input-group">
-                            <label>Message</label>
-                            <textarea rows="5" placeholder="Tell me about your project..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                    </form>
+        <div class="container reveal">
+            <div
+                style="background: var(--glass); border: 1px solid var(--glass-border); padding: 5rem; border-radius: 40px; text-align: center;">
+                <span class="script-font">Next Steps</span>
+                <h2 style="font-size: clamp(2rem, 8vw, 6rem); margin: 2rem 0;">LET'S START <br> SOMETHING BIG</h2>
+                <div class="cta-group" style="justify-content: center;">
+                    <a href="mailto:parameshg2003@gmail.com" class="btn btn-primary">Direct Email</a>
+                    <a href="#" class="btn btn-outline">WhatsApp Me</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container" style="text-align: center; padding: 40px 0; border-top: 1px solid var(--border);">
-            <p style="color: var(--text-muted); font-size: 0.8rem;">© 2026 Parameshwari Gangatharan. All Rights Reserved.</p>
-        </div>
+    <!-- Social Floating Bar -->
+    <div class="share-bar">
+        <a href="#" class="share-item"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="share-item"><i class="fab fa-behance"></i></a>
+        <a href="#" class="share-item"><i class="fab fa-dribbble"></i></a>
+        <a href="#" class="share-item"><i class="fas fa-paper-plane"></i></a>
+        <div style="width: 1px; height: 20px; background: var(--glass-border); margin: 10px 0;"></div>
+        <a href="#" class="share-item" id="global-like"><i class="far fa-heart"></i></a>
+    </div>
+
+    <footer style="padding: 50px 0; text-align: center; border-top: 1px solid var(--glass-border);">
+        <p style="color: var(--text-muted); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;">
+            Collabrate with Passion © 2026 Parameshwari Gangatharan
+        </p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
